@@ -16,6 +16,7 @@ public class test1 {
         ExtentTest test= report.createTest("this ia test","just a dummy report");
         test.log(Status.INFO,"nice duty");
         System.out.print("hello world");
+        System.out.println("second world");
         test.pass("this is passed and printed hello world");
         report.flush();
     }
