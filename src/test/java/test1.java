@@ -3,6 +3,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class test1 {
@@ -18,6 +19,7 @@ public class test1 {
         System.out.print("hello world");
         System.out.println("second world is mine");
         test.pass("this is passed and printed hello world");
+        Assert.assertFalse(true);
         report.flush();
     }
 }
